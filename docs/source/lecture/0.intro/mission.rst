@@ -1,5 +1,5 @@
-Mission
-============
+Introductory Mission
+======================
 
 
 .. raw:: html

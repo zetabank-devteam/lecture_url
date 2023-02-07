@@ -27,3 +27,5 @@ For navigation to take place, the robot must fulfill the following basic feature
     basic
     theory
     mission
+    discussion
+    qa

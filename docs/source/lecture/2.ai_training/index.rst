@@ -10,3 +10,4 @@ Here are the contents for this section:
     do_it_together
     pose/index
     segmentation/index
+    qa

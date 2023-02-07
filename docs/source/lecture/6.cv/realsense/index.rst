@@ -12,3 +12,5 @@ Here are the contents for this section:
     1.follow_along/index
     2.theory
     3.code_explanation
+    discussion
+    qa

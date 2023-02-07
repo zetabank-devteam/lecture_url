@@ -10,4 +10,5 @@ This section contains the following contents:
 
     1.follow_along
     2.terminology/index
-    3.mission
+    discussion
+    qa
