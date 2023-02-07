@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAO launcher &mdash; ZetaBank - Instructor Version</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/toc_custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/toc_custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Detectnet_v2 (NVIDIA example)" href="detectnet.html" />
+    <link rel="prev" title="TAO CLI Pre-Requisite Installation Guide" href="pre_req.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Instructors Version
+            <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.1.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">AI Autonomous Robot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_autonomous_robot/installation/index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/installation/summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/installation/assembly_process.html">※ Assembly Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/installation/jupyterlab_run.html">JupterLab Access &amp; Run examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_autonomous_robot/hardware/index.html">Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/hardware/critical_parts.html">Critical Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/hardware/sbc.html">SBC(Single Board Computer)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/hardware/block.html">Block Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/hardware/option_six_axis.html">Option: 6-axis robot arm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_autonomous_robot/software/index.html">Software</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/software/ros.html">ROS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/software/nvidia_inference.html">NVIDIA Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_autonomous_robot/software/jupyterlab.html">JupyterLab</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Mini Autonomous Robot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../mini_autonomous_robot/installation/index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/installation/summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/installation/jetson.html">※ Jetson Nano ver.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/installation/rassp.html">※ Raspberry Pi ver.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/installation/jupyterlab_run.html">JupterLab Access &amp; Run examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mini_autonomous_robot/hardware/index.html">Hardware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/hardware/critical_parts.html">Critical Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/hardware/sbc_jet.html">SBC(Jetson Nano)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/hardware/sbc_ras.html">SBC(Raspberry PI 4B)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/hardware/block.html">Block Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mini_autonomous_robot/software/index.html">Software</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/software/ros_jets.html">ROS 1 (Jetson Nano)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/software/ros_rasp.html">ROS 2 (Raspberry)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/software/docker.html">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/software/jupyterlab.html">JupyterLab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mini_autonomous_robot/software/ces.html">CES2023</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hands-on Lecture Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/0.intro/index.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/0.intro/explanation.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/0.intro/explanation.html#educational-ai-robot-contents">Educational AI Robot Contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/0.intro/explanation.html#autonomous-driving-sw">Autonomous Driving SW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/0.intro/explanation.html#ai-training-example-contents">AI Training Example Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/0.intro/explanation.html#diy-kit">DIY KIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/0.intro/explanation.html#variety-of-maps">Variety of Maps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/1.driving_ex/index.html">Driving the Robot Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/1.driving_ex/1.follow_along.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/1.driving_ex/1.follow_along.html#movement-instructions">Movement Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/1.driving_ex/1.follow_along.html#movement-with-odometry-information">Movement with Odometry Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/1.driving_ex/2.explanation.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/1.driving_ex/2.explanation.html#odometry-information">Odometry Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#robot-movement">Robot Movement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#initialization">Initialization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#sending-commands">Sending commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#combining-the-movement-instructions-to-a-single-python-function">Combining the movement instructions to a single python function</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#odometry-information">Odometry Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#odometry-calculation">Odometry calculation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/1.driving_ex/3.coding_explanation.html#starting-the-calculation">Starting the Calculation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/1.driving_ex/4.mission.html">Mission Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/1.driving_ex/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/2.ai_training/index.html">AI Training Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/index.html">AI Image Recognition using GoogleNet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/2.explanation.html#googlenet">GoogleNet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/3.coding_explanation.html">Coding Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/4.mission.html">Mission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/googlenet/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/index.html">AI Image Recognition using AlexNet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/2.explanation.html#alexnet">AlexNet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/2.explanation.html#how-are-googlenet-and-alexnet">How are GoogleNet and AlexNet?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/3.coding_explanation.html">Coding Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/4.mission.html">Mission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/alexnet/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/2.ai_training/do_it_together.html">Mission Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/do_it_together.html#writing-python-program-as-a-team">Writing Python Program as a Team</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/2.ai_training/pose/index.html">Body Pose Estimation with Pose-ResNet18-Body</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/pose/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/pose/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/2.explanation.html#pose-resnet18-body">Pose-ResNet18-Body</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/pose/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/3.coding_explanation.html#major-functionalities">Major Functionalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/3.coding_explanation.html#minor-functionalities">Minor Functionalities</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/pose/4.mission.html">Mission</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/4.mission.html#writing-custom-posenet-program">Writing Custom poseNet Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/4.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/pose/4.mission.html#let-s-change-the-overlay">Let’s Change the Overlay!!!</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/pose/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/index.html">Sematic Segmentation with FCN-ResNet18</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/1.follow_along.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/1.follow_along.html#cityscapes">CityScapes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/1.follow_along.html#outdoor-off-road">Outdoor (off-road)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/1.follow_along.html#segmenting-human-images">Segmenting Human Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/1.follow_along.html#variaty-objects-and-people">Variaty Objects and People</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/1.follow_along.html#in-doors">In-Doors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/2.explanation.html#fcn-resnet18">FCN-ResNet18</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/3.coding_explanation.html#major-functionalities">Major Functionalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/3.coding_explanation.html#minor-functionalities">Minor Functionalities</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/4.mission.html">Mission</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/4.mission.html#writing-custom-segnet-program">Writing Custom segNet Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/4.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/2.ai_training/segmentation/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/3.robot_control/index.html">Robot Controls Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/index.html">ROS Topic Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/1.follow_along/1.publisher.html">ROS Topic Publisher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/1.follow_along/2.subscriber.html">ROS Topic Subscriber</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/2.explanation/index.html#topic">Topic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/2.explanation/index.html#nodes">Nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/2.explanation/index.html#publisher">Publisher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/ros_topic_control/2.explanation/index.html#subscriber">Subscriber</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/index.html">ROS Sensors Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/1.follow_along/imu.html">IMU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/1.follow_along/lidar.html">LIDAR</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/2.explanation/index.html#imu">IMU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/3.robot_control/robot_sensors/2.explanation/index.html#lidar">LIDAR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/3.robot_control/mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/3.robot_control/mission.html#accessing-isaac-sight">Accessing Isaac Sight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/3.robot_control/mission.html#checking-visuals">Checking Visuals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/3.robot_control/discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/4.slam_nav/index.html">SLAM and Navigation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/4.slam_nav/basic.html">Basic Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/4.slam_nav/basic.html#map">1. Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/4.slam_nav/basic.html#pose-of-robot">1. Pose of Robot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/4.slam_nav/basic.html#sensing">Sensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/4.slam_nav/basic.html#path-calculation-and-driving">Path Calculation and Driving</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/4.slam_nav/theory.html">Theory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/4.slam_nav/slam_theory.html">Slam  Theory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/4.slam_nav/slam_theory.html#particle-filter">Particle filter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/4.slam_nav/navigation_theory.html">Navigation Theory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/4.slam_nav/navigation_theory.html#costmap">Costmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/4.slam_nav/navigation_theory.html#amcl">AMCL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/4.slam_nav/navigation_theory.html#dynamic-window-approach-dwa">Dynamic Window Approach (DWA)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/4.slam_nav/mission.html">Mission</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/index.html">Robot Arm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/index.html">Basic Robot Arm Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/1.moving_arm.html">Moving the Robot Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/2.motor_angle.html">Read Servo Motor Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/3.motor_cont.html">Controlling Servo Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/4.dancing_arm.html">Dancing with the Robot Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/5.teaching_arm.html">Robot Arm teaching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/basic_control/6.gripper_control.html">Gripper Control</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/advanced_control/index.html">Advanced Robot Arm Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/advanced_control/1.track_color.html">Tracking a Color with the Robotic Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/advanced_control/2.tracking_face.html">Tracking a Face with the Robotic Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/follow_along/advanced_control/sound/index.html">Dancing With Music</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/explanation.html#robot-arm-movements">Robot Arm Movements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/explanation.html#tracking-a-color-or-a-face">Tracking a Color or a Face</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/explanation.html#sound-pygame-sound-libraries">Sound (PyGame Sound Libraries)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html">Code Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#robot-arm-movements">Robot arm Movements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#basic-movements">Basic Movements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#reading-the-current-angle-of-the-servo">Reading the Current Angle of the Servo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#teaching-the-robot-arm">Teaching the Robot Arm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#tacking-a-color-or-a-face">Tacking a Color or a Face</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#tracking-a-color">Tracking a Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/code_explanation/index.html#tracking-a-face">Tracking a Face</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/mission/index.html">Mission Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/mission/index.html#libraries-used-for-this-mission">Libraries used for this Mission</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/mission/index.html#mission-lib-custom-library">mission_lib custom Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/mission/index.html#event-name-custom-library">event_name custom Library</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/mission/index.html#lets-start-the-mission">Lets Start the Mission!!!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/mission/index.html#pick-up-an-object-and-place-it-somewhere-else">Pick up an object and place it somewhere else!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/5.robot_arm_ex/discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/6.cv/index.html">Computer Vision</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/6.cv/realsense/index.html">Exercises Using RealSense Depth Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/6.cv/realsense/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/6.cv/realsense/1.follow_along/1.exercise.html">Exercise 1: ASCII Depth Representation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/6.cv/realsense/1.follow_along/2.exercise.html">Exercise 2: OpenCV and Numpy integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/6.cv/realsense/1.follow_along/3.exercise.html">Exercise 3: Align Depth with Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/6.cv/realsense/1.follow_along/4.exercise.html">Exercise 4. Advanced Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/6.cv/realsense/2.theory.html">Depth Camera Theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/6.cv/realsense/3.code_explanation.html">Code Explanation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lecture/7.digital_twin/index.html">Digital Twin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/7.digital_twin/1.follow_along.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/7.digital_twin/1.follow_along.html#initialization">Initialization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/7.digital_twin/1.follow_along.html#import-the-virtual-environment-and-the-robot">Import the Virtual Environment and the Robot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/7.digital_twin/1.follow_along.html#test-the-virtual-movements">Test the Virtual Movements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/7.digital_twin/1.follow_along.html#navigation">Navigation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/index.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/1.initial.html">Initialization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/1.initial.html#robot-tuning">Robot Tuning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/1.initial.html#robot-driving">Robot Driving</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/2.actiongraph.html">Action Graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/3.navigation.html">Navigation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../lecture/7.digital_twin/2.terminology/3.navigation.html#occupancy-map">Occupancy Map</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lecture/7.digital_twin/3.mission.html">Mission</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lets Try It Out!!!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/content_control/communication/index.html">Communication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_topic_publisher.html">ROS Topic Publisher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_topic_subscriber.html">ROS Topic Subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_command_ex.html">ROS Command Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_service_server.html">ROS Service Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_service_client.html">ROS Service Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_action_server.html">ROS Action Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/communication/ros_action_client.html">ROS Action Client</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/content_control/robot_sensor/index.html">Robot Sensors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/robot_sensor/imu.html">IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/robot_sensor/sonar.html">Sonar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/robot_sensor/camera.html">Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/robot_sensor/lidar.html">LIDAR</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/content_control/multi_media/index.html">Multi-Media</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/multi_media/speaker.html">Speaker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/multi_media/joystick.html">Joystick Vibration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/content_control/convergence/index.html">Convergence Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/convergence/proceesing_delay_pub.html">Processing Delay Publisher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/convergence/proceesing_delay_sub.html">Processing Delay Subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/convergence/time_slot_pub.html">Time Slot Publisher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/content_control/convergence/time_slot_sub.html">Time Slot Subscriber</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AI Training Content</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/ai_training/robot_ai/index.html">Robot Artificial Intelligence</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/robot_ai/blue_rec.html">Blue Color Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/robot_ai/color_rec.html">Color Detection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/index.html">AI training examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/image_det/index.html">Detecting Objects within an Image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/image_det/googlenet.html">Detecting Oranges - googlenet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/image_det/alexnet.html">Detecting Oranges - alexnet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/image_det/network.html">Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/video_det/index.html">Detecting Objects within a Video</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/video_det/det_car.html">Detecting Cars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/video_det/det_ped.html">Detecting Pedestrians</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/video_det/det_dog.html">Detecting Dogs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/video_det/network.html">Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_det/index.html">Detecting Objects with Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_det/obj_det.html">Object Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_det/face_det.html">Facial Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_det/dog_det.html">Detecting Dogs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_det/network.html">Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_seg/index.html">Object Segmentation with Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_seg/object_seg.html">Object Segmentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_seg/network.html">Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_dep/index.html">Depth Estimation with Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_dep/dept_est.html">Depth Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_dep/network.html">Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_est/index.html">Pose Recogntition with Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_est/handges.html">Hand Gesture Recognition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/camera_est/network.html">Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/ai_training_ex/training/index.html">Write ‘10 lines’ example code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/index.html">Training with AI inference examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/index.html">Try it out</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/image_rec.html">Image Recognition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/image_rec.html#launching-the-program">Launching the Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/image_rec.html#examples-through-jupyter-notebook">Examples through Jupyter Notebook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/obj_det/index.html">Object Detection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/obj_det/index.html#launching-the-program">Launching the Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/obj_det/index.html#examples-through-jupyter-notebook">Examples through Jupyter Notebook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/segmentation.html">Object Detection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/segmentation.html#launching-the-program">Launching the Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/segmentation.html#examples-through-jupyter-notebook">Examples through Jupyter Notebook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/pose_est.html">Pose Estimation with PoseNet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/pose_est.html#launching-the-program">Launching the Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/pose_est.html#examples-through-jupyter-notebook">Examples through Jupyter Notebook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/depth_est.html">Monocular Depth with DepthNet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/depth_est.html#launching-the-program">Launching the Program</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/try_it/depth_est.html#examples-through-jupyter-notebook">Examples through Jupyter Notebook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/explanation/index.html">Model Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/code_structure/index.html">Project Code Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/ai_training/inference_train_ex/mission/index.html">Mission</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lets Have a Lot of Fun!!!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/index.html">Robot Arm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/moving_arm.html">Moving the Robot Arm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/motor_angle.html">Read Servo Motor Angle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/motor_cont.html">Controlling Servo Motors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/dancing_arm.html">Dancing with the Robot Arm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/teaching_arm.html">Robot Arm teaching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/track_object.html">Tracking Objects with the Robotic Arm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/tracking_face.html">Tracking a Face with the Robotic Arm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/gripper_control.html">Gripper Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/dance1.html">Robot Dance - 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/robot_arm/dance2.html">Robot Dance - 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/having_fun/fun_trials/index.html">Fun Trials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/fun_trials/robot_arm_dance.html">Dancing Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/having_fun/fun_trials/catching.html">Catching Robot</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lets Do it as a Team!!!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/index.html">Basic Concept &amp; Terminology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/mapping_slam.html">Mapping &amp; SLAM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/mapping_slam.html#what-is-mapping">What is mapping?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/mapping_slam.html#what-is-slam">What is SLAM?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/localization.html">Localization &amp; AMCL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/localization.html#what-is-localization">What is Localization?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/localization.html#amcl-adaptive-monte-carlo-localization">AMCL(Adaptive Monte Carlo Localization)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning.html">Path Planning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/global_cost.html">Global Cost map &amp; Planner</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/global_cost.html#global-cost-map-global-planner">Global Cost map &amp; Global Planner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_cost.html">Local Cost map</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_cost.html#what-is-local-cost-map">What is Local Cost map?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_cost.html#obstacle-layer">Obstacle Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_cost.html#inflation-layer">Inflation layer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html">Local Planner</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html#what-is-local-planner">What is Local Planner?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html#dwa-local-planner">DWA Local Planner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html#robot-configuration-parameters">Robot Configuration Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html#goal-tolerance-parameters">Goal Tolerance Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html#forward-simulation-parameters">Forward Simulation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../ai_content/autonomous_driving/basic_concept/path_planning/local_planner.html#trajectory-scoring-parameters">Trajectory Scoring Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/autonomous_driving/navigation/index.html">Navigation setting for Zetabot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/navigation/index.html#mapping-in-action">Mapping In-Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/navigation/index.html#navigation-in-action">Navigation In-Action</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/autonomous_driving/control_parameter/index.html">Control Parameter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/control_parameter/index.html#modification-of-parameters-by-direct-navigation-into-the-folder">1. Modification of parameters by direct navigation into the folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/control_parameter/index.html#entering-parameter-values-in-real-time-on-the-gui">2. Entering parameter values in real time on the GUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/control_parameter/index.html">Control Parameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/control_parameter/inflation_layer.html">Inflation Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ai_content/autonomous_driving/control_parameter/cost_scaling.html">Cost_scaling_factor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/autonomous_driving/robot_drive/index.html">Driving the Robot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/robot_drive/driving_robot.html">Driving the Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../ai_content/autonomous_driving/robot_drive/odometry.html">Driving the Robot (Odometry)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_content/autonomous_driving/coastmap/index.html">Global / Local Coastmap</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Build Turorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../build_tutorial/intro.html">Overall DIY Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build_tutorial/1.auto_kit/index.html">Autonomous Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build_tutorial/2.ai_kit/index.html">AI Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build_tutorial/3.expert_kit/index.html">Expert Kit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Let's apply our knowledge</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../virtual/index.html">Virtual Robotics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">AI Transfer Learning</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">NVIDIA TAO Toolkit</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#general-purpose-model-architecture">General Purpose Model Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#nvidia-optimized-pre-trained-models">NVIDIA Optimized Pre-trained models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#user-defined-onnx-model">User Defined ONNX model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#term-explanation">Term Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tao-toolkit-pre-requisite-installation-guide">TAO Toolkit Pre-Requisite Installation Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pre_req.html">TAO CLI Pre-Requisite Installation Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#tao-launcher-methods">TAO Launcher Methods</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">TAO launcher</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tao-run-example-detectnet-v2">TAO Run Example (Detectnet_v2)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="detectnet.html">Detectnet_v2 (NVIDIA example)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tao-run-example-yolo-4-tiny">TAO Run Example (YOLO_4_Tiny)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="yolo_tiny.html">YOLO_4_Tiny</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tao-run-example-tensor-visualization">TAO Run Example (Tensor Visualization)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tensorvisual.html">TensorBoard Visualization</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Instructors Version</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">AI Transfer Learning</a></li>
+          <li class="breadcrumb-item"><a href="index.html">NVIDIA TAO Toolkit</a></li>
+      <li class="breadcrumb-item active">TAO launcher</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/documentation/transfer/nvidia_tao/launcher.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tao-launcher">
+<h1>TAO launcher<a class="headerlink" href="#tao-launcher" title="Permalink to this headline"></a></h1>
+<section id="introductory-explanation">
+<h2>Introductory Explanation<a class="headerlink" href="#introductory-explanation" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p>The TAO toolkit consists of 2 main frameworks individually for <strong>Computer Vision (CV)</strong> and <strong>Conversational AI models</strong>. Both have different workflow, but the setup for these models are the same. There exists <strong>model card</strong> containing pre-trained weights for a number of <strong>model architectures</strong> and <strong>backbones</strong>. For example, for object detection <em>model card</em> with <strong>Detectnet_v2</strong> architecture there are:</p>
+<ul class="simple">
+<li><p>resnet10/resnet18/resnet34/resnet50</p></li>
+<li><p>vgg16/vgg19</p></li>
+<li><p>googlenet</p></li>
+<li><p>mobilenet_v1/mobilenet_v2</p></li>
+<li><p>squeezenet</p></li>
+<li><p>darknet19/darknet53</p></li>
+</ul>
+<p>models that is used as the starting point for transfer learning. These models are called the <strong>backbones</strong>. Each <em>model architectures</em> are trained with specific data set. For <strong>Detectnet_v2 model architecture</strong> is trained using the Google Open-images dataset.</p>
+<p><strong>(Note!!!)</strong> That most of the backbone within object detection model architecture is called <strong>feature extractor</strong> , as the main purpose of the backbone within each of the model is to feature extraction. The backbones for other model cards may be called differently based on their intended purposes.</p>
+<p><strong>(Note!!!)</strong> The pre-trained weight for Detectnet_v2 architecture is different and may not be used for other architectures. Some weights for architectures such as <strong>YOLO 3/4/4-Tiny, SSD and RetineNet</strong> architectures may share weights. Refer to each of the specific models in  (<a class="reference external" href="https://catalog.ngc.nvidia.com/models">https://catalog.ngc.nvidia.com/models</a>).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><cite>Combinations for Model architecture and Backbones for Computer Vision:</cite></p>
+<a class=""
+               data-lightbox="group-b31b6b2d-a78b-4ea5-ab1e-95aaa94ede5e"
+               href="../../../_images/openimage_table1.jpg"
+               title=""
+               data-title=""
+               
+               ><img src="../../../_images/openimage_table1.jpg"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p>More details on specific Computer Vision based model can be viewed in <strong>CV Applications</strong> section:
+<a class="reference external" href="https://docs.nvidia.com/tao/tao-toolkit/index.html">https://docs.nvidia.com/tao/tao-toolkit/index.html</a></p>
+</div></blockquote>
+</section>
+<section id="launching-tao-toolkit">
+<h2>Launching TAO toolkit<a class="headerlink" href="#launching-tao-toolkit" title="Permalink to this headline"></a></h2>
+<ol class="arabic">
+<li><p><strong>When launching TAO toolkit, it is important to check:</strong></p>
+<blockquote>
+<div><ul>
+<li><dl>
+<dt>Whether the installed docker NVIDIA CUDA and the host system NVIDIA CUDA are the same version.</dt><dd><ul>
+<li><p>If the version of each CUDA are different, it is recommended to remove the old NVIDIA CUDA driver and install the matching driver on the host machine.</p>
+<blockquote>
+<div><p>This is because, since TAO is updated regularly the CUDA version required for the docker is constantly updated. With an older version, the length of functionality may be limited.</p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Make sure that the TAO toolkit is operational by:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tao<span class="w"> </span>--help
+</pre></div>
+</div>
+<p>This allows users to see if the TAO is installed properly and the different types of functions available for TAO.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>TAO launcher configuration</strong></p>
+<blockquote>
+<div><p>Every TAO execution is run with the mount configuration (launch instance) (<code class="docutils literal notranslate"><span class="pre">tao_mounts.json</span></code>).</p>
+<p>The need for mounts stems from the need to locate dataset which may be in a larger database, foreign to the host machine. Each TAO execution/ project may use different configurations of launch instances, hence it is recommended to re-create the launch instance at every new project execution.</p>
+<p>The launcher configuration file (<code class="docutils literal notranslate"><span class="pre">tao_mounts.json</span></code>) consists of 3 sections:</p>
+<ul>
+<li><dl class="simple">
+<dt>Mounts</dt><dd><ul class="simple">
+<li><p>Mounts parameter defines the path in the local machine and the path that should be mapped to the docker.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Envs</dt><dd><ul>
+<li><dl>
+<dt>Environment parameter defines the variables that will be linked to the TAO Toolkit, and will have dictionary containing two key-values:</dt><dd><ul class="simple">
+<li><p>Variable: The name of the environment variable.</p></li>
+<li><p>Value: the value of the environment value.</p></li>
+</ul>
+<p>The environments may include:</p>
+<ul>
+<li><p>ClearML:</p>
+<blockquote>
+<div><a class=""
+               data-lightbox="group-0804cf3f-cfcd-4967-97cb-ab0feedf9b59"
+               href="../../../_images/ClearML1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../../../_images/ClearML1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><div class="line-block">
+<div class="line">Which includes comprehensive live results of the model progress. From Average precision of each of the class, overall cost of the model throughout the iteration, the ClearML will monitor and log each step of the model.</div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Wandb:</p>
+<blockquote>
+<div><a class=""
+               data-lightbox="group-b1112130-6a8b-40d2-b72a-0c94a31ca672"
+               href="../../../_images/wandb1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../../../_images/wandb1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><div class="line-block">
+<div class="line">Similar to ClearML, wandb allows for live logging and monitoring of the Model and hardware used for the model.</div>
+</div>
+<p><strong>(NOTE!!!) If it is necessary to define user and gid within the nvidia docker environment, do not use wandb as it required root access to the project environment.</strong></p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Docker Options</p>
+<blockquote>
+<div><ul>
+<li><p>DockerOptions parameter allows to control the option setting required when evoking the docker command. The amount of control which can be set are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">shm_size</span></code>: Defines the shared memory size of the docker. If this parameter isn’t set, then the TAO Toolkit instance allocates 64MB by default. We recommend setting this as <code class="docutils literal notranslate"><span class="pre">&quot;16G&quot;</span></code>, thereby allocating 16GB of shared memory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ulimits`</span></code>: Defines the user limits in the docker. This parameter corresponds to the ulimit parameters in <code class="docutils literal notranslate"><span class="pre">/etc/security/limits.conf</span></code>. We recommend users set <code class="docutils literal notranslate"><span class="pre">memlock</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">stack</span></code> to <code class="docutils literal notranslate"><span class="pre">67108864</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">user</span></code>: Defines the user id and group id of the user to run the commands in the docker. By default, if this parameter isn’t defined in the <code class="docutils literal notranslate"><span class="pre">~/.tao_mounts.json</span></code> the uid and gid of the root user. However, this would mean that when directories created by the TAO dockers would be set to root permissions. If you would like to set the user in the docker to be the same as the host user, please set this parameter as “UID:GID”, where UID and GID can be obtained from the command line by running <code class="docutils literal notranslate"><span class="pre">id -u</span></code> and <code class="docutils literal notranslate"><span class="pre">id -g</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ports</span></code>: This parameter defines the ports in the docker to be mounted to the host</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Example Config</p>
+<blockquote>
+<div><div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;Mounts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/zeta/getting_started_v4.0.0/notebooks/tao_launcher_starter_kit/detectnet_v2&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/workspace/tao-experiments&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/zeta/getting_started_v4.0.0/notebooks/tao_launcher_starter_kit/detectnet_v2/specs&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/workspace/tao-experiments/detectnet_v2/specs&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;DockerOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1000:1000&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Envs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLEARML_WEB_HOST&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://app.clear.ml&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLEARML_API_HOST&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://api.clear.ml&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLEARML_FILES_HOST&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://files.clear.ml&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLEARML_API_ACCESS_KEY&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9E7HPH358MZ5GK9RP1MB&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CLEARML_API_SECRET_KEY&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4zamUwmWZHV706OP6lTGcLuTXUZcSz8X0bElSVROpuuysoh0ob&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Example Config 2 (NVIDIA Example):</p>
+<blockquote>
+<div><div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;Mounts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/your/data&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/workspace/tao-experiments/data&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/your/local/results&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/workspace/tao-experiments/results&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/config/files&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/workspace/tao-experiments/specs&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;Envs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;variable&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CUDA_DEVICE_ORDER&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PCI_BUS_ID&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;DockerOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;shm_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;16G&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ulimits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;memlock&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;stack&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">67108864</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1000:1000&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ports&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;8888&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8888</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>TAO Running tasks</strong></p>
+<blockquote>
+<div><p>TAO toolkit allows for training, re-training, pruning, converting / pre-processing the data into tf format. Basic command line format is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tao<span class="w"> </span>&lt;task&gt;<span class="w"> </span>&lt;subtask&gt;<span class="w"> </span>&lt;cli_args&gt;
+</pre></div>
+</div>
+<p>You may open docker CLI environment with <code class="docutils literal notranslate"><span class="pre">tao</span> <span class="pre">&lt;task&gt;</span></code>. In case of Detectnet_v2 the CLI environment was accessed with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tao<span class="w"> </span>detectnet_v2
+</pre></div>
+</div>
+<p>Make sure to see all the available command line arguments that can be run with the specific task one is about to have. <code class="docutils literal notranslate"><span class="pre">tao</span> <span class="pre">&lt;task&gt;</span> <span class="pre">--help</span></code></p>
+<ul>
+<li><p><strong>Ex)</strong></p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tao detectnet_v2 --help
+
+Using TensorFlow backend.
+usage: detectnet_v2 [-h] [--gpus GPUS] [--gpu_index GPU_INDEX [GPU_INDEX ...]]
+                    [--use_amp] [--log_file LOG_FILE]
+                    {calibration_tensorfile,dataset_convert,evaluate,export,inference,prune,train}
+                    ...
+
+TAO Toolkit
+
+optional arguments:
+-h, --help            show this help message and exit
+--gpus GPUS           The number of GPUs to be used for the job.
+--gpu_index GPU_INDEX [GPU_INDEX ...]
+                        The indices of the GPU&#39;s to be used.
+--use_amp             Flag to enable Auto Mixed Precision.
+--log_file LOG_FILE   Path to the output log file.
+
+tasks:
+{calibration_tensorfile,dataset_convert,evaluate,export,inference,prune,train}
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>TAO Detectnet_v2 Model running Example</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>!tao<span class="w"> </span>detectnet_v2<span class="w"> </span>train<span class="w"> </span>-e<span class="w"> </span><span class="nv">$SPECS_DIR</span>/detectnet_v2_train_resnet18_kitti.txt<span class="w"> </span><span class="se">\</span>
+<span class="w">                        </span>-r<span class="w"> </span><span class="nv">$USER_EXPERIMENT_DIR</span>/experiment_dir_unpruned<span class="w"> </span><span class="se">\</span>
+<span class="w">                        </span>-k<span class="w"> </span><span class="nv">$KEY</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                        </span>-n<span class="w"> </span>resnet18_detector<span class="w"> </span><span class="se">\</span>
+<span class="w">                        </span>--gpus<span class="w"> </span><span class="nv">$NUM_GPUS</span>
+</pre></div>
+</div>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">task</span></code>: detectnet_v2</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sub_task</span></code>: train</p></li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">cli_args</span></code>:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">-e</span></code>: specs file for the training parameters</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-r</span></code>: Output location for the experiment</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-k</span></code>: key for the experiment.</p>
+<blockquote>
+<div><p><strong>(Note!!!) most of the tao pre-trained models have the same key of `tao_encode`</strong></p>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-n</span></code>: Name of the output model</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--gpus</span></code>: Number of GPU.</p>
+<blockquote>
+<div><p><strong>(Note!!!) TAO allows for multiprocessing, but in order to enable the access to this function, the mount configuration file as well as the model spec file must be edited.</strong></p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>(IMPORTANT!!!):</strong></p>
+<blockquote>
+<div><p>If you wish to train (or do any training related sub-tasks) remove all the previously created files within:
+<code class="docutils literal notranslate"><span class="pre">$USER_EXPERIMENT_DIR/experiment_dir_name</span></code>
+If this is not done, the project will result in FAIL at the last iteration of the training.!!!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!rm -rf $USER_EXPERIMENT_DIR/experiment_dir_name/*
+</pre></div>
+</div>
+<p>This is especially important if you wish to run multiple different variation of the model with different hyper_parameters. <strong>Currently TAO does not support any automatic hyper-parameter tuner, instead offers sample hyper-parameters</strong>
+<a class="reference external" href="https://forums.developer.nvidia.com/t/hyperparameter-optimization/194174/2">https://forums.developer.nvidia.com/t/hyperparameter-optimization/194174/2</a></p>
+</div></blockquote>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Handling Launched Processes</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Once the TAO project is launched, container is activated. This container is active until the given task is finished.</p>
+<p>In order to see the current running task, run <code class="docutils literal notranslate"><span class="pre">tao</span> <span class="pre">list</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>tao<span class="w"> </span><span class="nv">list</span>
+<span class="w"> </span><span class="o">==============</span><span class="w">  </span><span class="o">==================</span><span class="w">  </span><span class="o">=============================================================================================================================================================================================</span>
+<span class="w"> </span>container_id<span class="w">    </span>container_status<span class="w">    </span><span class="nb">command</span>
+<span class="w"> </span><span class="o">==============</span><span class="w">  </span><span class="o">==================</span><span class="w">  </span><span class="o">=============================================================================================================================================================================================</span>
+<span class="w"> </span>5316a70139<span class="w">      </span>running<span class="w">             </span>detectnet_v2<span class="w"> </span>train<span class="w"> </span>-e<span class="w"> </span>/workspace/tao-experiments/detectnet_v2/experiment_dir_unpruned/experiment_spec.txt<span class="w"> </span>-k<span class="w"> </span>tlt_encode<span class="w"> </span>-r<span class="w"> </span>/workspace/tao-experiments/detectnet_v2/experiment_dir_unpruned
+<span class="w"> </span><span class="o">==============</span><span class="w">  </span><span class="o">==================</span><span class="w">  </span><span class="o">=============================================================================================================================================================================================</span>
+</pre></div>
+</div>
+</li>
+<li><p>If the TAO launch is failed or if the container is not terminated after the activation, you may terminate the container with <code class="docutils literal notranslate"><span class="pre">tao</span> <span class="pre">stop</span></code> command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>usage:<span class="w"> </span>tao<span class="w"> </span>stop<span class="w"> </span><span class="o">[</span>-h<span class="o">]</span><span class="w"> </span><span class="o">[</span>--container_id<span class="w"> </span>CONTAINER_ID<span class="w"> </span><span class="o">[</span>CONTAINER_ID<span class="w"> </span>...<span class="o">]]</span><span class="w"> </span><span class="o">[</span>--all<span class="o">]</span>
+<span class="w">            </span><span class="o">{</span>info,list,stop,augment,classification,classifynet,detectnet_v2,dssd,emotionnet,faster_rcnn,fpenet,gazenet,heartratenet,intent_slot_classification,lprnet,mask_rcnn,punctuation_and_capitalization,question_answering,retinanet,speech_to_text,ssd,text_classification,converter,token_classification,yolo_v3,yolo_v4,yolo_v4_tiny<span class="o">}</span>
+<span class="w">            </span>...
+
+optional<span class="w"> </span>arguments:
+-h,<span class="w"> </span>--help<span class="w">            </span>show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
+--container_id<span class="w"> </span>CONTAINER_ID<span class="w"> </span><span class="o">[</span>CONTAINER_ID<span class="w"> </span>...<span class="o">]</span>
+<span class="w">                        </span>Ids<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>containers<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>stopped.
+--all<span class="w">                   </span>Kill<span class="w"> </span>all<span class="w"> </span>TAO<span class="w"> </span>Toolkit<span class="w"> </span>running<span class="w"> </span>TAO<span class="w"> </span>Toolkit<span class="w"> </span>containers.
+
+tasks:
+<span class="w">  </span><span class="o">{</span>info,list,stop,augment,classification,classifynet,detectnet_v2,dssd,emotionnet,faster_rcnn,fpenet,gazenet,heartratenet,intent_slot_classification,lprnet,mask_rcnn,punctuation_and_capitalization,question_answering,retinanet,speech_to_text,ssd,text_classification,converter,token_classification,yolo_v3,yolo_v4,yolo_v4_tiny<span class="o">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>To stop a specific container(s):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tao<span class="w"> </span>stop<span class="w"> </span>--container_id<span class="w"> </span>&lt;specific_container_id1&gt;,<span class="w"> </span>&lt;specific_container_id2&gt;,<span class="w"> </span>...
+</pre></div>
+</div>
+<p>(more information may be accessed in: <a class="reference external" href="https://docs.nvidia.com/tao/tao-toolkit/text/tao_launcher.html">https://docs.nvidia.com/tao/tao-toolkit/text/tao_launcher.html</a>)</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pre_req.html" class="btn btn-neutral float-left" title="TAO CLI Pre-Requisite Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="detectnet.html" class="btn btn-neutral float-right" title="Detectnet_v2 (NVIDIA example)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17821189-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-17821189-2', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
