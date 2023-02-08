@@ -1,4 +1,4 @@
-Day-One Lecture
+Day One Lecture
 ==================
 
 Here are the contents for Day-One Lecture:
