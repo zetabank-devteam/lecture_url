@@ -25,7 +25,7 @@ Writing Custom poseNet Program
 
 
 
-Similar to how we created a new python file in our team assignment, generate a new python file and name it ``pose_estimation_camera.py``.
+Similar to how we created a new python file in our team assignment, generate a new python file and name it ``02_4-2. pose_estimation_camera.py``.
 
 Create a new python file in the Jupyter Notebook Environment:
 
@@ -41,7 +41,7 @@ Create a new python file in the Jupyter Notebook Environment:
 
 |
 
--   Rename the untitiled python file to ``pose_estimation_camera.py``
+-   Rename the untitiled python file to ``02_4-2. pose_estimation_camera.py``
 
 
 -   On the new python file, import the libraries necessary. For our Pose Estimation task, we need to import the Jetson inference library modules and jetson utility library modules
@@ -175,7 +175,7 @@ Create a new python file in the Jupyter Notebook Environment:
 Executing the Custom Program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
--   Open the ``pose_estimation_camera.ipynb`` notebook.
+-   Open the ``02_4-2. pose_estimation_camera.py`` notebook.
 
 .. thumbnail:: /_images/ai_training/pose_estimation_camera.png
 
@@ -193,7 +193,7 @@ Executing the Custom Program
 
     .. code-block:: python
 
-        cat /home/zeta/notebook/'9. AI 실습예제'/'pose_estimation_camera.py'
+        cat /home/zeta/notebook/lecture/'2.AI Training Examples'/'02_4-2. pose_estimation_camera.py'
 
 -   One important thing about the zetabot is that the Raspberry Pi camera is constantly running.
 
@@ -216,7 +216,7 @@ Executing the Custom Program
     .. code-block:: python
 
         %%capture
-        !python3 /home/zeta/notebook/'9. AI 실습예제'/pose_estimation_camera.py --network=resnet18-body $CAMERA
+        !python3 /home/zeta/notebook/lecture/'2.AI Training Examples'/'02_4-2. pose_estimation_camera.py' --network=resnet18-body $CAMERA
 
 -   Be sure to turn the camera back online by:
 

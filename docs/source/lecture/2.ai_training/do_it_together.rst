@@ -48,7 +48,7 @@ Create a new python file in the Jupyter Notebook Environment:
 
 |
 
--   Rename the untitiled python file to ``team_mission.py``
+-   Rename the untitiled python file to ``02_3-1. team_mission.py``
 
 
     .. thumbnail:: /_images/ai_training/team_mission1.png
@@ -129,7 +129,7 @@ Create a new python file in the Jupyter Notebook Environment:
 
 -   To run the custom program you have made, go to your team_mission jupyter notebook:
 
-    -   team_mission.ipynb
+    -   02_3-2. team_mission.ipynb
     -   | Running the cell code
         | `Ctrl + Enter`
 
@@ -141,7 +141,7 @@ Create a new python file in the Jupyter Notebook Environment:
 
         .. code-block:: python
 
-            cat /home/zeta/notebook/'9. AI 실습예제'/'team_mission.py'
+            cat /home/zeta/notebook/lecture/'2.AI Training Examples'/'02_3-1. team_mission.py'
     
     -   One important thing about the zetabot is that the Raspberry Pi camera is constantly running.
 
@@ -160,7 +160,7 @@ Create a new python file in the Jupyter Notebook Environment:
 
             %%capture # Comment this cell if you wish to see the program output
             %env DISPLAY=:0
-            !python3 /home/zeta/notebook/'9. AI 실습예제'/'team_mission.py';
+            !python3 /home/zeta/notebook/lecture/'2.AI Training Examples'/'02_3-1. team_mission.py'
 
     -   Be sure to turn the camera back online by:
 

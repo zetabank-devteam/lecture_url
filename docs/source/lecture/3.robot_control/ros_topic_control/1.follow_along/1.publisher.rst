@@ -27,7 +27,7 @@ ROS Topic Publisher
 
 Open the following jupyter notebook:
 
-- 01_01_ros_topic_publisher.ipynb
+- 03_01_ros_topic_publisher.ipynb
 - To run the cells within the notebook use *Ctrl + Enter*
 
 

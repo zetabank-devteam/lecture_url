@@ -29,7 +29,7 @@ Movement Instructions
 
 Open the provided jupyter notebook
 
--   01_wheel.ipynb
+-   01_01_wheel.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 
@@ -186,7 +186,7 @@ Movement with Odometry Information
 
 Open the jupyter notebook
 
--   02_wheel_odom.ipynb
+-   01_02_wheel_odom.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 

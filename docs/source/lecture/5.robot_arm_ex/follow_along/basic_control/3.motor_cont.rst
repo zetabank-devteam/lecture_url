@@ -36,6 +36,14 @@ Controlling Servo Motors
 
 |
 
+-   To make sure that no other program is using the robot arm, turn off the joy stick control and allow for robot arm to be controlled:
+
+.. code-block:: python 
+
+    %%capture
+    !pm2 stop 14
+    !pm2 start 15
+
 -   Load Arm_Lib module and register the robot arm as an object
 
 
@@ -99,3 +107,11 @@ Controlling Servo Motors
 .. code-block:: python
 
     del Arm  # Remove robot arm object
+
+-   Reset the Robot Arm control
+
+.. code-block:: python 
+
+    %%capture
+    !pm2 stop 15
+    !pm2 start 14

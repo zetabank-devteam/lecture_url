@@ -27,7 +27,7 @@ LIDAR
 
 Open the following jupyter notebook:
 
-- 01_04_scan.ipynb
+- 03_04_scan.ipynb
 - To run the cells within the notebook use *Ctrl + Enter*
 
 .. thumbnail:: /_images/content_control/sensor5.png

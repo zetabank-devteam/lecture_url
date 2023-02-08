@@ -24,11 +24,11 @@ Follow Along!
     <hr>
 
 
--   1-1. Detect oranges in images  - alexnet.ipynb
+-   02_2-1. Detect oranges in images - alexnet.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/ai_training/alexnet1.webp
+.. thumbnail:: /_images/ai_training/alexnet1.png
 
 
 -   Import the subprocess module to run the example scripts (i.e. show.sh, kill.sh)

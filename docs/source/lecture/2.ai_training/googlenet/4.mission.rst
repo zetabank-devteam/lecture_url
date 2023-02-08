@@ -34,7 +34,7 @@ directly from our jupyter notebook, hence we will not be using our shell program
 
 Open the gogolenet_mission python notebook:
 
--   1.googlenet_mission.ipynb
+-   02_1-2.googlenet_mission.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 

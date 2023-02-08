@@ -245,14 +245,22 @@ Open the mission folder and open the mission.ipynb file.
 
 .. thumbnail:: /_images/ai_training/mission.png
 
+-   Reset the Robot Arm control
+
+.. code-block:: python 
+
+    %%capture
+    !pm2 stop 15
+    !pm2 start 14
+
 - First, import in the necessary libraries
 
   .. code-block:: python
 
     import cv2 as cv
     import threading
+    import os
     from time import sleep
-    from pygame import mixer
     import ipywidgets as widgets
     from mission_lib import Movement
     from event_name import EventName
@@ -274,7 +282,7 @@ Open the mission folder and open the mission.ipynb file.
         movement = Movement(Arm)
         e = EventName()
 
-- Initialize the different speeds of the robot arm, and music object.
+- Initialize the different speeds of the robot arm.
 
     .. code-block:: python 
 
@@ -282,11 +290,6 @@ Open the mission folder and open the mission.ipynb file.
                     "Regular": 1000,
                     "Fast": 500}
 
-        # ogg 파일 등록
-        mixer.init(48000, 16, 2, 2048)
-        music = mixer.Sound('music.ogg')
-
-        music.set_volume(0.02) # Change between 0.1 and 0.01
 
 - Create the GUI widgets:
 
@@ -391,10 +394,10 @@ Open the mission folder and open the mission.ipynb file.
             movement.release_pincher(move_speed[choose_movement.value])
             e.reset()
         if e.action == 'Play Music':
-            music.play()
+            os.system('rostopic pub -1 /robot_sound std_msgs/Int32MultiArray "data: [1.0, 0.0, 4.0]"')
             e.reset()
         if e.action == 'No Music':
-            music.stop()
+            os.system('rostopic pub -1 /robot_sound std_msgs/Int32MultiArray "data: [0.0, 0.0, 4.0]"')
         if e.action == 'Exit':
             cv.destroyAllWindows()
             capture.release()
@@ -409,8 +412,15 @@ Open the mission folder and open the mission.ipynb file.
         display(controls_box,output)
         threading.Thread(target=camera, ).start()
 
-  - Be sure to delete the robot arm after exiting the GUI. 
+  - Be sure to delete the robot , and reset the robot arm control after exiting the GUI. 
 
+    .. code-block:: python 
+
+        del Arm
+
+        %%capture
+        !pm2 stop 15
+        !pm2 start 14
 
 Pick up an object and place it somewhere else!
 -------------------------------------------------

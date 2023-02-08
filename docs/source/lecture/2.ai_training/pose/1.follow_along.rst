@@ -26,7 +26,7 @@ Follow Along!
     <hr>
 
 
--   pose_estimation.ipynb
+-   02_4-1. pose_estimation.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 

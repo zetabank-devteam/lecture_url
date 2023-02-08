@@ -35,7 +35,7 @@ directly from our jupyter notebook, hence we will not be using our shell program
 
 Open the alexnet_mission python notebook:
 
--   1.alexnet_mission.ipynb
+-   02_2-2 alexnet_mission.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 

@@ -27,10 +27,10 @@ IMU
 
 Open the following jupyter notebook:
 
-- 01_03_imu.ipynb
+- 03_03_imu.ipynb
 - To run the cells within the notebook use *Ctrl + Enter*
 
-.. thumbnail:: /_images/content_control/sensor1.jpg
+.. thumbnail:: /_images/content_control/sensor1.png
 
 |
 

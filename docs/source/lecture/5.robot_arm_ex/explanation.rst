@@ -34,12 +34,13 @@ as well as the ``Arm_Lib`` library.
 
 
 
-Sound (PyGame Sound Libraries)
+Sound 
 -------------------------------
 
-For our dancing robot demonstration we use *pygame* library to create the sound and 
-*Arm_Lib* library to move the robot arm. 
+For our dancing robot demonstration, we published an array of integer to ROS Topic called ``/robot_sound``. 
 
+The ``robot_sound`` topic recieves integer array of size 3: ``[slot1, slot2, slot3]``.
 
-*PyGame* is a game library that includes variery of computer graphics and sound libraries. For our task we will only be using the sound libraries. 
-
+- **slot1**: Recieves binary integer (1, 0) dictating whether to play the sound (1) or stop the sound (0).
+- **slot2**: File ID (ranges from 0 ~ 9).
+- **slot3**: Directory ID. (set to 1)

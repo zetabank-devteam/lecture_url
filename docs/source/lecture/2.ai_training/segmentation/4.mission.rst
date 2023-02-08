@@ -18,7 +18,7 @@ Mission
 Writing Custom segNet Program
 ---------------------------------
 
-Similar to how we created a new python file in our team assignment, generate a new python file and name it ``segmentation_camera.py``.
+Similar to how we created a new python file in our team assignment, generate a new python file and name it ``02_5-2. segmentation_camera.py``.
 
 Create a new python file in the Jupyter Notebook Environment:
 
@@ -34,7 +34,7 @@ Create a new python file in the Jupyter Notebook Environment:
 
 |
 
--   Rename the untitiled python file to ``segmentation_camera.py``
+-   Rename the untitiled python file to ``02_5-2. segmentation_camera.py``
 
 
 -   On the new python file, import the libraries necessary. For our segmentation task, we need to import the Jetson inference library modules and jetson utility library modules
@@ -183,7 +183,7 @@ Create a new python file in the Jupyter Notebook Environment:
 Executing the Custom Program
 -----------------------------
 
--   Open the ``segmentation_camera.ipynb`` notebook.
+-   Open the ``02_5-3. segmentation_camera.ipynb`` notebook.
 
 .. thumbnail:: /_images/ai_training/segmentation_camera.png
 
@@ -201,7 +201,7 @@ Executing the Custom Program
 
     .. code-block:: python
 
-        cat /home/zeta/notebook/'9. AI 실습예제'/'segmentation_camera.py'
+        cat /home/zeta/notebook/lecture/'2.AI Training Examples'/'5-2. segmentation_camera.py'
 
 -   One important thing about the zetabot is that the Raspberry Pi camera is constantly running.
 
@@ -227,7 +227,7 @@ Executing the Custom Program
     .. code-block:: python
 
         %%capture
-        !python3 /home/zeta/notebook/'9. AI 실습예제'/segmentation_camera.py --network=fcn-resnet18-voc $CAMERA
+        !python3 /home/zeta/notebook/lecture/'2.AI Training Examples'/'5-2. segmentation_camera.py' --network=fcn-resnet18-voc $CAMERA
 
 -   Be sure to turn the camera back online by:
 

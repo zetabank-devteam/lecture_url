@@ -35,6 +35,14 @@ Tracking a Face with the Robotic Arm
 
 .. thumbnail:: /_images/having_fun/face1.png
 
+-   To make sure that no other program is using the robot arm, turn off the joy stick control and allow for robot arm to be controlled:
+
+.. code-block:: python 
+
+    %%capture
+    !pm2 stop 14
+    !pm2 start 15
+
 -   Face Recognition and Tracking Using Robot Arm Camera
 -   Import head file
 
@@ -121,3 +129,12 @@ Tracking a Face with the Robotic Arm
 
     display(controls_box,output)
     threading.Thread(target=camera, ).start()
+
+
+-   Reset the Robot Arm control
+
+.. code-block:: python 
+
+    %%capture
+    !pm2 stop 15
+    !pm2 start 14

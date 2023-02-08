@@ -86,7 +86,7 @@ In Education Provided by ZetaBank:
    :hidden:
    :caption: Two-day Lecture
 
-   2_day_lecture/index
+   2_day_lecture/1.ai_training/index
    
 
 .. toctree:: 

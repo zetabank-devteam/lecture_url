@@ -24,11 +24,11 @@ Follow Along!
     <hr>
 
 
--   1-1. Detect oranges in images - googlenet.ipynb
+-   02_1-1. Detect oranges in images - googlenet.ipynb
 -   | Running the cell code
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/ai_training/googlenet1.webp
+.. thumbnail:: /_images/ai_training/googlenet1.png
 
 
 -   Import the subprocess module to run the example scripts (i.e. show.sh, kill.sh)
