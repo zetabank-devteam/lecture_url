@@ -1,5 +1,5 @@
-ZetaBank Lecture
-===================
+Experience the Technology of the Future and Coding
+====================================================
 
 
 Welcome to ZetaBank Educational Program!
@@ -50,48 +50,3 @@ In Education Provided by ZetaBank:
 
   .. thumbnail:: /_images/ai_training/zeta_edu2.jpg
    :width: 250
-
-
-
-
-.. toctree:: 
-   :caption: Nano Degree Program
-   :maxdepth: 1
-   :hidden:
-   :titlesonly: 
-
-   0.intro/introduction
-   0.intro/explanation
-   0.intro/coding_ex
-   0.intro/robot_ex
-   0.intro/mission
-
-
-.. toctree:: 
-   :maxdepth: 5
-   :hidden:
-   :caption: Coding Practice for Experience
-   
-   experience_coding/day_one/index
-   experience_coding/day_two/index
-   experience_coding/day_three/index
-   experience_coding/day_four/index
-   experience_coding/day_five/index
-
-
-
-.. toctree:: 
-   :maxdepth: 5
-   :hidden:
-   :caption: Robot Coding Practice
-   
-   robot_coding/lecture/index
-   robot_coding/day_two/index
-   robot_coding/day_three/index
-   robot_coding/day_four/index
-   robot_coding/day_five/index
-
-
-
-
-
