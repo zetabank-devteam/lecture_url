@@ -134,4 +134,113 @@ request / reply based communication system with *Service* which is defined by a 
 
 A providing ROS node offers a service under a string name, and a client calls the service by sending the request message and awaiting the reply. 
 
-Within the python 
+As mentioned earlier the ROS Services are defined by srv (simplified service description language) files. With the usage of rospy (python library),
+we can convert the srv files into Python source code, and create three classes necessary for ROS Services:
+
+1. Service Definition. Ex: (my_package/srv/Foo.srv -> my_package.srv.Foo)
+   
+   Within a python file, the Service is defined as a container for the request and response type. It must be used whenever one creates or calls a service
+
+   .. code-block:: python 
+
+    add_two_ints = rospy.ServiceProxy('service_name', my_package.srv.Foo)
+
+2. Request Messages. Ex: (my_package/srv/Foo.srv -> my_package.srv.FooRequest)
+   
+   The resuest message is used to call the appropriate service. 
+
+
+3. Response Messages. Ex: (my_package/srv/Foo.srv -> my_package.srv.FooResponse)
+
+   The response message is used to contain the return value from the appropriate service. Hecne the Service handlers must return response messages instances of the correct type. 
+  
+
+2. Service proxies
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+In most cases, you wish to set up a ``rospy.wait_for_service('service_name', timeout=None)`` to block until a service is available. 
+
+In order to use a Service, we need to create a ``rospy.ServiceProxy(name, service_class, persistent=False, headers=None)`` with the name of the service one wishes to call. The Service may return an error
+in which case, we need to have a exception handler. 
+
+.. code-block:: python 
+
+  rospy.wait_for_service('add_two_ints')
+  try:
+      add_two_ints = rospy.ServiceProxy('add_two_ints', AddTwoInts)
+      resp1 = add_two_ints(x, y)
+      return resp1.sum
+  except rospy.ServiceException as e:
+      print("Service call failed: %s"%e)
+
+3. Calling services
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``rospy.ServiceProxy`` instances are callable. Within the python environment, you may call upon these instances similar to how a methos is called.
+
+.. code-block:: python
+
+  add_two_ints = rospy.ServiceProxy('add_two_ints', AddTwoInts)
+  add_two_ints(1, 2)
+
+There are total of three ways to pass an argument to the ServiceProxy instance.
+
+1. Explicit style:
+   
+   The explicit style allows you to crewate your won * Request instance and pass it to publish. e.g:
+
+   .. code-block:: python 
+
+    request = rospy_tutorials.srv.AddTwoIntsRequest(1, 2)
+    response = add_two_ints(request)
+
+2. Implicit style with in-order arguments:
+   
+   In the in-order style, a new Message instance will be created with the arguments provided, in order. With this style, all of the fields must be provided. 
+
+   .. code-block:: python 
+
+    resp = add_two_ints(1, 2)
+
+3. Implicit style with keyword arguments:
+
+   In the keyword style, you can only initialize the fields you wish to put into as a Message. 
+
+   .. code-block:: python 
+
+    resp = add_two_ints(a = 1)
+
+   The above code will set the a as 1 and b as the default value (for our case it is 0)
+
+4. Providing Services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In rospy, the rospy.Service instance with a callback to invoke when new requests are recieved is created to provide Service. Each inbound request is handled in its own thread,
+so services must be **thread-safe**.
+
+``rospy.Service(name, service_class, handler, buff_size=65536)``
+
+- Create a new ROS Service with 
+  - Specified name
+  - Service type
+  - Handler
+
+    The handler is invoked with the service request and should invoke appropriate service response message. 
+
+    .. code-block:: python 
+
+      def add_two_ints(req):
+        return rospy_tutorials.srv.AddTowIntsResponse(req.a + req.b)
+
+      def add_two_ints_server():
+        rospy.init_node('add_two_ints_server')
+        s = rospy.Service('add_two_ints', rospy_tutorials.srv.AddTwoInts, add_two_ints)
+        rospy.spin()
+
+    The handler return type may be:
+
+    - None(failure)
+    - ServiceResponse
+    - tuple or list
+    - dict
+    - singe-arugment responses only: value of fields.
