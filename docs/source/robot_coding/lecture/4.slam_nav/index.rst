@@ -24,6 +24,7 @@ For navigation to take place, the robot must fulfill the following basic feature
 .. toctree:: 
     :hidden:
     
+    introduction
     basic
     theory
     mission
