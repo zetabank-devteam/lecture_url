@@ -30,7 +30,7 @@ Follow Along!
 -   | Running the cell code
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/ai_training/placeholder.png
+.. thumbnail:: /_images/ai_training/object_det.png
 
 
 -   Initialize your output stream, and your path, and import in the Image library
@@ -53,10 +53,11 @@ Follow Along!
 
     .. code-block:: python
 
-        !ls $INPUT_PATH/*
+        !ls $INPUT_PATH/cat_*
+        !ls $INPUT_PATH/dog_*
 
 
-    .. thumbnail:: /_images/ai_training/placeholder.png
+    .. thumbnail:: /_images/ai_training/object_det1.png
 
 |
 
@@ -90,4 +91,4 @@ Follow Along!
         Image(filename=output_path+'/detect_result.jpg') 
 
 
-    .. thumbnail:: /_images/ai_training/placeholder.png
+    .. thumbnail:: /_images/ai_training/detect_result.png

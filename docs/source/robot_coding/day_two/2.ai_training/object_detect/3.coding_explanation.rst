@@ -45,9 +45,7 @@ With our python program, the user must specify
 
     With ``!python3 $PROGRAM_PATH/detectnet.py`` as our activation function, we have:
     
-    1.  ``--network=ssd-mobilenet-v1
-
-``: to specify which network we wished to use. (for this case SSD-Mobilenet-v1 network)
+    1.  ``--network=ssd-mobilenet-v1``: to specify which network we wished to use. (for this case SSD-Mobilenet-v1 network)
     2.  ``$INPUT_PATH/$IMAGE_NAME``: to specify our input image location.
     3.  ``$OUTPUT_PATH/$OUTPUT_NAME``: to specify our output image location. 
 
