@@ -1,3 +1,5 @@
 {
-    "esbonio.sphinx.confDir": ""
+    "python.autoComplete.addBrackets": true,
+    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source",
+    "python.analysis.completeFunctionParens": true
 }

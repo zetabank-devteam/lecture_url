@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Explanation &mdash; ZetaBank - Instructor Version</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/toc_custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/toc_custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
+        <script src="../../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Mission Project" href="../mission/index.html" />
+    <link rel="prev" title="Overall Explanation" href="../explanation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Instructors Version
+              <img src="../../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.1.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Nano Degree Program</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../0.intro/introduction.html">Experience the Technology of the Future and Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../0.intro/explanation.html">Overall Lecture Explanation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../0.intro/coding_ex.html">Coding Practice for Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../0.intro/robot_ex.html">Robot Coding Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../0.intro/mission.html">Introductory Mission</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Coding Practice for Experience</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../experience_coding/day_one/index.html">Day One Lecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_one/joystick.html">Operating Robot via Joystick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_one/team_play.html">Robot Play on the Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_one/assemble.html">Let Us Try to Assemble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_one/ai.html">AI Training Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_one/get_to_know.html">Get to know your Robot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../experience_coding/day_two/index.html">Day Two Lecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_two/drive.html">Robot Drive (Joystick vs Coding)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_two/get_to_know.html">Get to know your Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_two/ai.html">AI Training Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../experience_coding/day_three/index.html">Day Three Lecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_three/competition.html">Manually Driving vs Autonomously Driving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_three/assemble.html">Assembling the Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_three/get_to_know.html">Get to know your Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_three/ai.html">AI Training Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../experience_coding/day_four/index.html">Day Four Lecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_four/team_competition.html">Team Competition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../experience_coding/day_four/source.html">Source Code Explanation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../experience_coding/day_five/index.html">Day Five Lecture</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Coding Practice Day 1</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../1.robot_control/index.html">Robot Controls Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../1.robot_control/introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../1.robot_control/ros_topic_control/index.html">ROS Topic Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../1.robot_control/ros_topic_control/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/ros_topic_control/1.follow_along/1.publisher.html">ROS Topic Publisher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/ros_topic_control/1.follow_along/2.subscriber.html">ROS Topic Subscriber</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../1.robot_control/ros_topic_control/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/ros_topic_control/2.explanation/index.html#topic">Topic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/ros_topic_control/2.explanation/index.html#nodes">Nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/ros_topic_control/2.explanation/index.html#publisher">Publisher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/ros_topic_control/2.explanation/index.html#subscriber">Subscriber</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../1.robot_control/robot_sensors/index.html">ROS Sensors Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../1.robot_control/robot_sensors/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/robot_sensors/1.follow_along/imu.html">IMU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/robot_sensors/1.follow_along/lidar.html">LIDAR</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../1.robot_control/robot_sensors/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/robot_sensors/2.explanation/index.html#imu">IMU</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../1.robot_control/robot_sensors/2.explanation/index.html#lidar">LIDAR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../1.robot_control/mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../1.robot_control/mission.html#accessing-isaac-sight">Accessing Isaac Sight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../1.robot_control/mission.html#checking-visuals">Checking Visuals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../1.robot_control/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../1.robot_control/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2.ai_training/index.html">AI Image Recognition Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2.ai_training/introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../2.ai_training/googlenet/index.html">AI Image Recognition using GoogleNet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/googlenet/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/googlenet/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2.ai_training/googlenet/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2.ai_training/googlenet/2.explanation.html#googlenet">GoogleNet</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/googlenet/3.coding_explanation.html">Coding Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/googlenet/4.mission.html">Mission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/googlenet/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../2.ai_training/alexnet/index.html">AI Image Recognition using AlexNet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/alexnet/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/alexnet/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2.ai_training/alexnet/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2.ai_training/alexnet/2.explanation.html#alexnet">AlexNet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2.ai_training/alexnet/2.explanation.html#how-are-googlenet-and-alexnet">How are GoogleNet and AlexNet?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/alexnet/3.coding_explanation.html">Coding Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/alexnet/4.mission.html">Mission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/alexnet/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../2.ai_training/do_it_together.html">Mission Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2.ai_training/do_it_together.html#writing-python-program-as-a-team">Writing Python Program as a Team</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../2.ai_training/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../3.driving_ex/index.html">Driving the Robot Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/0.introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/1.follow_along.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../3.driving_ex/1.follow_along.html#movement-instructions">Movement Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../3.driving_ex/1.follow_along.html#movement-with-odometry-information">Movement with Odometry Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/2.explanation.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../3.driving_ex/2.explanation.html#odometry-information">Odometry Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#robot-movement">Robot Movement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#initialization">Initialization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#sending-commands">Sending commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#combining-the-movement-instructions-to-a-single-python-function">Combining the movement instructions to a single python function</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#odometry-information">Odometry Information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#odometry-calculation">Odometry calculation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../3.driving_ex/3.coding_explanation.html#starting-the-calculation">Starting the Calculation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/4.mission.html">Mission Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/5.discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.driving_ex/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../4.slam_nav/index.html">SLAM and Navigation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../4.slam_nav/introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../4.slam_nav/basic.html">Basic Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/basic.html#map">1. Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/basic.html#pose-of-robot">1. Pose of Robot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/basic.html#sensing">Sensing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/basic.html#path-calculation-and-driving">Path Calculation and Driving</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../4.slam_nav/theory.html">Theory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/slam_theory.html">Slam  Theory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../4.slam_nav/slam_theory.html#particle-filter">Particle filter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/navigation_theory.html">Navigation Theory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../4.slam_nav/navigation_theory.html#costmap">Costmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../4.slam_nav/navigation_theory.html#amcl">AMCL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../4.slam_nav/navigation_theory.html#dynamic-window-approach-dwa">Dynamic Window Approach (DWA)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../4.slam_nav/mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/mission.html#constructing-a-map-as-a-team">Constructing a Map (as a Team)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/mission.html#mapping-the-constructed-map">Mapping the Constructed Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/mission.html#executing-navigation">Executing Navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../4.slam_nav/mission.html#team-competition">Team Competition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../4.slam_nav/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../4.slam_nav/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Robot Arm</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../follow_along/basic_control/index.html">Basic Robot Arm Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/basic_control/1.moving_arm.html">Moving the Robot Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/basic_control/2.motor_angle.html">Read Servo Motor Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/basic_control/3.motor_cont.html">Controlling Servo Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/basic_control/4.dancing_arm.html">Dancing with the Robot Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/basic_control/5.teaching_arm.html">Robot Arm teaching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/basic_control/6.gripper_control.html">Gripper Control</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../follow_along/advanced_control/index.html">Advanced Robot Arm Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/advanced_control/1.track_color.html">Tracking a Color with the Robotic Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/advanced_control/2.tracking_face.html">Tracking a Face with the Robotic Arm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../follow_along/advanced_control/sound/9.follow_along_2.html">Dancing With Music!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../explanation.html#robot-arm-movements">Robot Arm Movements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../explanation.html#tracking-a-color-or-a-face">Tracking a Color or a Face</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../explanation.html#sound">Sound</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Code Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#robot-arm-movements">Robot arm Movements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#basic-movements">Basic Movements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reading-the-current-angle-of-the-servo">Reading the Current Angle of the Servo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#teaching-the-robot-arm">Teaching the Robot Arm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tacking-a-color-or-a-face">Tacking a Color or a Face</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tracking-a-color">Tracking a Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tracking-a-face">Tracking a Face</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mission/index.html">Mission Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mission/index.html#libraries-used-for-this-mission">Libraries used for this Mission</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mission/index.html#mission-lib-custom-library">mission_lib custom Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mission/index.html#event-name-custom-library">event_name custom Library</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mission/index.html#lets-start-the-mission">Lets Start the Mission!!!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mission/index.html#pick-up-an-object-and-place-it-somewhere-else">Pick up an object and place it somewhere else!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../6.cv/index.html">Computer Vision</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../6.cv/realsense/index.html">Exercises Using RealSense Depth Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../6.cv/realsense/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../6.cv/realsense/1.follow_along/1.exercise.html">Exercise 1: ASCII Depth Representation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../6.cv/realsense/1.follow_along/2.exercise.html">Exercise 2: OpenCV and Numpy integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../6.cv/realsense/1.follow_along/3.exercise.html">Exercise 3: Align Depth with Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../6.cv/realsense/1.follow_along/4.exercise.html">Exercise 4. Advanced Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../6.cv/realsense/2.theory.html">Depth Camera Theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../6.cv/realsense/3.code_explanation.html">Code Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../6.cv/realsense/discussion.html">Discussion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../6.cv/realsense/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../7.digital_twin/index.html">Digital Twin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../7.digital_twin/1.follow_along.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/1.follow_along.html#initialization">Initialization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/1.follow_along.html#import-the-virtual-environment-and-the-robot">Import the Virtual Environment and the Robot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/1.follow_along.html#test-the-virtual-movements">Test the Virtual Movements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/1.follow_along.html#navigation">Navigation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../7.digital_twin/2.terminology/index.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/2.terminology/1.initial.html">Initialization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/2.terminology/1.initial.html#robot-tuning">Robot Tuning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/2.terminology/1.initial.html#robot-driving">Robot Driving</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/2.terminology/2.actiongraph.html">Action Graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/2.terminology/4.usd.html">Universal Scene Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/2.terminology/3.navigation.html">Navigation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/2.terminology/3.navigation.html#occupancy-map">Occupancy Map</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../7.digital_twin/2.terminology/5.warehouse.html">Warehouse Navigation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/2.terminology/5.warehouse.html#prerequisite">Prerequisite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/2.terminology/5.warehouse.html#the-ros-navigation-setup">The ROS Navigation Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../7.digital_twin/2.terminology/5.warehouse.html#running-ros-navigation">Running ROS Navigation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../7.digital_twin/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../7.digital_twin/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../8.chat_gpt/index.html">ChatGPT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../8.chat_gpt/index.html#sample">Sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../8.chat_gpt/index.html#methods">Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../8.chat_gpt/index.html#limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Coding Practice Day 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_two/1.robot_control/index.html">Robot Controls Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/1.robot_control/ros/index.html">ROS Command Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/1.robot_control/ros/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/ros/1.follow_along/1.command.html">ROS Command Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/ros/1.follow_along/2.server.html">ROS Service Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/ros/1.follow_along/3.client.html">ROS Service Client</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/1.robot_control/ros/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/ros/2.explanation/index.html#ros-command-line">ROS Command Line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/ros/2.explanation/index.html#ros-service">ROS Service</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/index.html">ROS Sensors Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/1.follow_along/camera.html">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/1.follow_along/sonar.html">Sonar</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/2.explanation/index.html#camera">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/1.robot_control/robot_sensors/2.explanation/index.html#sonar">SONAR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/1.robot_control/mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/1.robot_control/mission.html#accessing-isaac-sight">Accessing Isaac Sight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/1.robot_control/mission.html#checking-visuals">Checking Visuals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/1.robot_control/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/1.robot_control/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_two/2.ai_training/index.html">Pose/Gesture Estimation Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/pose/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/pose/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/2.explanation.html#pose-resnet18-body">Pose-ResNet18-Body</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_two/2.ai_training/pose/2.explanation.html#residual-blocks">Residual Blocks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/pose/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/3.coding_explanation.html#major-functionalities">Major Functionalities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/3.coding_explanation.html#minor-functionalities">Minor Functionalities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/pose/4.mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/4.mission.html#writing-custom-posenet-program">Writing Custom poseNet Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/4.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/pose/4.mission.html#let-s-change-the-overlay">Let’s Change the Overlay!!!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/pose/5.discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/index.html">Object Detection with SSD-Mobilenet-v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/2.explanation.html#ssd-mobilenet-v2">SSD-Mobilenet-v2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/2.explanation.html#other-models-for-object-detection">Other models for Object Detection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/3.coding_explanation.html#major-functionalities">Major Functionalities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/3.coding_explanation.html#minor-functionalities">Minor Functionalities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/4.mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/4.mission.html#writing-custom-detectnet-program">Writing Custom detectNet Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/4.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/4.mission.html#let-s-change-the-overlay">Let’s Change the Overlay!!!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/2.ai_training/object_detect/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_two/3.driving_ex/index.html">Driving Games of the Robot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/3.driving_ex/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/3.driving_ex/2.explanation.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/3.driving_ex/2.explanation.html#odometry-information">Odometry Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/3.driving_ex/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_two/3.driving_ex/3.coding_explanation.html#robot-movement">Robot Movement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/3.driving_ex/4.mission.html">Mission Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/3.driving_ex/5.discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/3.driving_ex/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_two/4.autonomous_games/index.html">Autonomous Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/4.autonomous_games/introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/4.autonomous_games/basic.html">Basic Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/4.autonomous_games/theory.html">Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/4.autonomous_games/mission.html">Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/4.autonomous_games/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/4.autonomous_games/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/index.html">Robot Arm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/follow_along/index.html">Follow Along!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/explanation.html">Overall Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/code_explanation/index.html">Code Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/mission/index.html">Mission Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_two/5.robot_arm_ex/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Coding Practice Day 3</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_three/1.robot_control/index.html">Robot Controls Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/1.robot_control/ros/index.html">ROS Command Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/1.robot_control/ros/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/ros/1.follow_along/1.command.html">ROS Command Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/ros/1.follow_along/2.server.html">ROS Service Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/ros/1.follow_along/3.client.html">ROS Service Client</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/1.robot_control/ros/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/ros/2.explanation/index.html#ros-command-line">ROS Command Line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/ros/2.explanation/index.html#ros-service">ROS Service</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/index.html">ROS Sensors Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/1.follow_along/index.html">Follow Along!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/1.follow_along/camera.html">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/1.follow_along/sonar.html">Sonar</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/2.explanation/index.html">Explanation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/2.explanation/index.html#camera">Camera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/1.robot_control/robot_sensors/2.explanation/index.html#sonar">SONAR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/1.robot_control/mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/1.robot_control/mission.html#accessing-isaac-sight">Accessing Isaac Sight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/1.robot_control/mission.html#checking-visuals">Checking Visuals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/1.robot_control/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/1.robot_control/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_three/2.sematic_seg/index.html">Sematic Segmentation Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/2.sematic_seg/1.follow_along.html">Follow Along!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/1.follow_along.html#cityscapes">CityScapes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/1.follow_along.html#outdoor-off-road">Outdoor (off-road)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/1.follow_along.html#segmenting-human-images">Segmenting Human Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/1.follow_along.html#variaty-objects-and-people">Variaty Objects and People</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/1.follow_along.html#in-doors">In-Doors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/2.sematic_seg/2.explanation.html">Overall Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/2.explanation.html#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/2.explanation.html#fcn-resnet18">FCN-ResNet18</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../day_three/2.sematic_seg/2.explanation.html#convolutionalizing">Convolutionalizing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/2.sematic_seg/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/3.coding_explanation.html#major-functionalities">Major Functionalities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/3.coding_explanation.html#minor-functionalities">Minor Functionalities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/2.sematic_seg/4.mission.html">Mission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/4.mission.html#writing-custom-segnet-program">Writing Custom segNet Program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/2.sematic_seg/4.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/2.sematic_seg/5.discussion.html">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_three/3.driving_ex/index.html">Driving Games of the Robot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/3.driving_ex/1.follow_along.html">Follow Along!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/3.driving_ex/2.explanation.html">Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/3.driving_ex/2.explanation.html#odometry-information">Odometry Information</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/3.driving_ex/3.coding_explanation.html">Coding Explanation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../day_three/3.driving_ex/3.coding_explanation.html#robot-movement">Robot Movement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/3.driving_ex/4.mission.html">Mission Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/3.driving_ex/5.discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/3.driving_ex/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_three/4.slam_nav/index.html">Autonomous Games</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/4.slam_nav/introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/4.slam_nav/basic.html">Basic Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/4.slam_nav/theory.html">Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/4.slam_nav/mission.html">Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/4.slam_nav/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/4.slam_nav/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/index.html">Robot Arm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/follow_along/index.html">Follow Along!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/explanation.html">Overall Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/code_explanation/index.html">Code Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/mission/index.html">Mission Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/discussion.html">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../day_three/5.robot_arm_ex/qa.html">Q&amp;A session</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Coding Practice Day 4</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_four/index.html">Place Holder</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Robot Coding Practice Day 5</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../day_five/index.html">Place Holder</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Instructors Version</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Robot Arm</a></li>
+      <li class="breadcrumb-item active">Code Explanation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/robot_coding/lecture/5.robot_arm_ex/code_explanation/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="code-explanation">
+<h1>Code Explanation<a class="headerlink" href="#code-explanation" title="Permalink to this heading"></a></h1>
+<section id="robot-arm-movements">
+<h2>Robot arm Movements<a class="headerlink" href="#robot-arm-movements" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p class="linemarker linemarker-7">In order to instruct the robot arm, we must first initialize it as an object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Register robot arm as an object</span>
+<span class="n">Arm</span> <span class="o">=</span> <span class="n">Arm_Device</span><span class="p">()</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-15">As you may have noticed, we after the arm is initialized as an object, we pause our program
+for one tenth of a second. We will regularly follow this protocol when we are giving the
+robot arm multiple instructions at the same time. We do not want some of the instructions cutting
+in while other insturctional movements have not finished.</p>
+</li>
+</ul>
+</section>
+<section id="basic-movements">
+<h2>Basic Movements<a class="headerlink" href="#basic-movements" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p class="linemarker linemarker-24">For basic movements, we use <code class="docutils literal notranslate"><span class="pre">Arm_serial_servo_write(servo_id,</span> <span class="pre">angle,</span> <span class="pre">time)</span></code> function. The function can accept 3 parameters
+from the user.</p>
+<ol class="arabic simple">
+<li><p class="linemarker linemarker-27">servo_id: The servo_id represents the motors responsible for the robot arm movements. There are total of 6 robots, from the bottom most motor responsbile for rotational movement and to the last motor which is responsible for the pincher</p></li>
+<li><p class="linemarker linemarker-28">angle: The angle determines how much the motor should move from its current position.</p></li>
+<li><p class="linemarker linemarker-29">time: The time in which the movement is to be conducted. (in 1/2 mili seconds)</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Arm</span> <span class="o">=</span> <span class="n">Arm_Device</span><span class="p">()</span>
+<span class="c1"># Move the 6th servo (which is the pincher) to 90 degree angle for 2 second.</span>
+<span class="n">Arm</span><span class="o">.</span><span class="n">Arm_serial_servo_write</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="linemarker linemarker-38">You may also move multiple servo’s at the same time using <code class="docutils literal notranslate"><span class="pre">Arm_seria_servo_write6(...params)`</span></code> function.
+The function recieves angle information for all the servor and the required time for movement completion.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Move all the servo&#39;s 90 degrees for 2 second</span>
+<span class="n">Arm</span><span class="o">.</span><span class="n">Arm_serial_servo_write6</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="linemarker linemarker-46">You may give the same instructions in a list format using <code class="docutils literal notranslate"><span class="pre">Arm_seria_servo_write6_array(array,</span> <span class="pre">time)</span></code> function.</p>
+</li>
+</ul>
+</section>
+<section id="reading-the-current-angle-of-the-servo">
+<h2>Reading the Current Angle of the Servo<a class="headerlink" href="#reading-the-current-angle-of-the-servo" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p class="linemarker linemarker-51">All the servos at any given moment are rotated to a specific angle.
+In order to determine the current angle of the motors, we may run <code class="docutils literal notranslate"><span class="pre">Arm_serial_servo_read(servo_id)`</span></code> function.</p>
+<ul class="simple">
+<li><p class="linemarker linemarker-54">By specifying the desired servo number, we may get the current angle information of the specified servo.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">servo_angle</span> <span class="o">=</span> <span class="n">Arm</span><span class="o">.</span><span class="n">Arm_serial_servo_read</span><span class="p">(</span><span class="n">servo_id</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="teaching-the-robot-arm">
+<h2>Teaching the Robot Arm<a class="headerlink" href="#teaching-the-robot-arm" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p class="linemarker linemarker-64">Since manually instructing angle information for each of the servo for every movement is difficult, you may
+teach you robot arm moves.</p>
+<ul>
+<li><p class="linemarker linemarker-67">By default, the servos are in locked position. The function that is responsible for locking and unlocking the robot arm is <code class="docutils literal notranslate"><span class="pre">Arm_Button_Mode(mode)</span></code> function</p>
+<p class="linemarker linemarker-69">The function recieves 1 input <em>mode</em> from the user. The mode must be an binary integer of either 1 and 0.</p>
+<ol class="arabic simple">
+<li><p class="linemarker linemarker-71"><code class="docutils literal notranslate"><span class="pre">mode=0</span></code>: All servos are locked (default)</p></li>
+<li><p class="linemarker linemarker-72"><code class="docutils literal notranslate"><span class="pre">mode=1</span></code>: All servos are released</p></li>
+</ol>
+</li>
+<li><p class="linemarker linemarker-74">To learn a movement, <code class="docutils literal notranslate"><span class="pre">Arm_Action_Study()</span></code> function is used. To study a movement, simply activate the function and move the arm
+If you wish to have multiple movements, after completing one movement, activate the function again and repeat the process.
+<em>(NOTE!)</em> The after activating the function, only the first movement of the robot is registered. If it is a chain movement, please activate the function at the start of each movement.
+After finishing the movement put the robot arm back to the locked mode. <code class="docutils literal notranslate"><span class="pre">Arm_Button_Mode(0)</span></code></p></li>
+<li><p class="linemarker linemarker-79">To see the number of learned movements, run <code class="docutils literal notranslate"><span class="pre">Arm_Read_Action_Num()</span></code> function which will return the total learned movements.</p></li>
+<li><p class="linemarker linemarker-80">To execute the learned movements, run <code class="docutils literal notranslate"><span class="pre">Arm_Action_Mode(mode)</span></code> function. This function will sequentially run all the learned movements from the first to last.
+We can have 3 different execution mode:</p>
+<ol class="arabic simple">
+<li><p class="linemarker linemarker-83"><code class="docutils literal notranslate"><span class="pre">mode</span> <span class="pre">=</span> <span class="pre">1</span></code>: Execute all the sequence only once.</p></li>
+<li><p class="linemarker linemarker-84"><code class="docutils literal notranslate"><span class="pre">mode</span> <span class="pre">=</span> <span class="pre">2</span></code>: Execute all the sequence repeatedly.</p></li>
+<li><p class="linemarker linemarker-85"><code class="docutils literal notranslate"><span class="pre">mode</span> <span class="pre">=</span> <span class="pre">3</span></code>: Stop the sequence.</p></li>
+</ol>
+</li>
+<li><p class="linemarker linemarker-87">To clear all the previously learned movements, run <code class="docutils literal notranslate"><span class="pre">Arm_Clear_Action()</span></code> function.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tacking-a-color-or-a-face">
+<h2>Tacking a Color or a Face<a class="headerlink" href="#tacking-a-color-or-a-face" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p class="linemarker linemarker-93">For tracking tasks, we provide custom library (for color tracking <code class="docutils literal notranslate"><span class="pre">color_folow.py</span></code> and <code class="docutils literal notranslate"><span class="pre">PID.py</span></code>, for face tracking <code class="docutils literal notranslate"><span class="pre">dofbot_conf.py</span></code>, <code class="docutils literal notranslate"><span class="pre">face_follow.py</span></code>, <code class="docutils literal notranslate"><span class="pre">PID.py</span></code>)</p></li>
+</ul>
+<section id="tracking-a-color">
+<h3>Tracking a Color<a class="headerlink" href="#tracking-a-color" title="Permalink to this heading"></a></h3>
+<ul>
+<li><p class="linemarker linemarker-99">Here are all the libraries used for tracking a color task.</p>
+<ul class="simple">
+<li><p class="linemarker linemarker-101"><em>cv2</em>: Computer Vision library</p></li>
+<li><p class="linemarker linemarker-102"><em>threading</em>: Threading library for multi, singular processing.</p></li>
+<li><p class="linemarker linemarker-103"><em>random</em>: Library for generating and controlling random instances.</p></li>
+<li><p class="linemarker linemarker-104"><em>time</em>: Library for time related modules.</p></li>
+<li><p class="linemarker linemarker-105"><em>ipywidgets</em>: Widget library used to create graphical user interfaces with IPython display.</p></li>
+<li><p class="linemarker linemarker-106"><em>IPython.display</em>: Library with modules that allow for graphical output within jupyter environment</p></li>
+<li><p class="linemarker linemarker-107"><em>color_follow</em>: Custom library with modules that allow for robot arm to follow the color.</p></li>
+</ul>
+</li>
+<li><p class="linemarker linemarker-109">Initialization</p>
+<ol class="arabic simple">
+<li><p class="linemarker linemarker-112">Create the follow instance for the color_follow modules.</p></li>
+<li><p class="linemarker linemarker-113">Initialize model variable with ‘General’. Later on it will be changed to whether you wish to learn a new color, learn to track or simply to exit the tracking process.</p></li>
+<li><p class="linemarker linemarker-114">Initialize HSV_learning. Later on it will house the learned movement modules.</p></li>
+<li><p class="linemarker linemarker-115">color_hsv: Initialize what red, green, blue, and yellow collow would be (in a spectrum)</p></li>
+<li><p class="linemarker linemarker-116">color: Initialize the first color to be random.</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">follow</span> <span class="o">=</span> <span class="n">color_follow</span><span class="p">()</span>
+<span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;General&#39;</span>
+<span class="n">HSV_learning</span> <span class="o">=</span> <span class="p">()</span>
+<span class="n">color_hsv</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;red&quot;</span><span class="p">:</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)),</span>
+            <span class="s2">&quot;green&quot;</span><span class="p">:</span> <span class="p">((</span><span class="mi">53</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)),</span>
+            <span class="s2">&quot;blue&quot;</span><span class="p">:</span> <span class="p">((</span><span class="mi">110</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)),</span>
+            <span class="s2">&quot;yellow&quot;</span><span class="p">:</span> <span class="p">((</span><span class="mi">25</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">55</span><span class="p">),</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))}</span>
+
+<span class="n">color</span> <span class="o">=</span> <span class="p">[[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">255</span><span class="p">)]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="linemarker linemarker-130">Create the widgets for the user, and create a switch variables to change the model.</p>
+<ol class="arabic simple">
+<li><p class="linemarker linemarker-132">Whether to follow the specied color.</p></li>
+<li><p class="linemarker linemarker-133">Whether to learn a new color.</p></li>
+<li><p class="linemarker linemarker-134">Whether to learn to follow.</p></li>
+<li><p class="linemarker linemarker-135">Whether to be in a general mode.</p></li>
+<li><p class="linemarker linemarker-136">Whether to exit the task.</p></li>
+</ol>
+</li>
+<li><p class="linemarker linemarker-138">Main process</p>
+<p class="linemarker linemarker-140">The main function built for our main process is camera function. Within the function:</p>
+<ol class="arabic">
+<li><p class="linemarker linemarker-142">Initialize the camera input, and the framerate.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Open camera</span>
+<span class="n">capture</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">capture</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">640</span><span class="p">)</span>
+<span class="n">capture</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+<span class="n">capture</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>  <span class="c1">#set frame</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-152">Capture every frame from the camera on loop. Terminate the loop upon closure of the camera.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">capture</span><span class="o">.</span><span class="n">isOpened</span><span class="p">():</span>
+</pre></div>
+</div>
+<ol class="arabic">
+<li><p class="linemarker linemarker-158">Import in the frame of the input feed and resize it to 640, 480 ratio.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">img</span> <span class="o">=</span> <span class="n">capture</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-166">If the model is set to follow the color, activate follow_function and provide the function with the current frame and the color to follow.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;color_follow&#39;</span><span class="p">:</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">follow</span><span class="o">.</span><span class="n">follow_function</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">color_hsv</span><span class="p">[</span><span class="n">choose_color</span><span class="o">.</span><span class="n">value</span><span class="p">])</span>
+    <span class="n">cv</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">choose_color</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">50</span><span class="p">),</span> <span class="n">cv</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">254</span><span class="p">)],</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-174">If the model is set to learn a new color, activate learn function.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;learning_color&#39;</span><span class="p">:</span>
+    <span class="n">img</span><span class="p">,</span><span class="n">HSV_learning</span> <span class="o">=</span> <span class="n">follow</span><span class="o">.</span><span class="n">get_hsv</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-181">If the model is set to learn to follow, activate the learn follow function.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;learning_follow&#39;</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">HSV_learning</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">HSV_learning</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">follow</span><span class="o">.</span><span class="n">learning_follow</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">HSV_learning</span><span class="p">)</span>
+
+        <span class="n">cv</span><span class="o">.</span><span class="n">putText</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="s1">&#39;LeColor&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">240</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">cv</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">254</span><span class="p">)],</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-192">If the model is set to exit, close all the windows opened and release the camera.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;Exit&#39;</span><span class="p">:</span>
+    <span class="n">cv</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+    <span class="n">capture</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+    <span class="k">break</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-201">To activate the function above, first activate a display output, then within a thread run the function.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">controls_box</span><span class="p">,</span><span class="n">output</span><span class="p">)</span>
+<span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">camera</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</section>
+<section id="tracking-a-face">
+<h3>Tracking a Face<a class="headerlink" href="#tracking-a-face" title="Permalink to this heading"></a></h3>
+<p class="linemarker linemarker-212">The steps taken for tracking a face is very similar to tracking a color. We use an cascading calssifier, an ensemble learning
+model based on the concatenation of several classifiers. We will be using a pretrained xml model named <code class="docutils literal notranslate"><span class="pre">haarcascade_frontalface_default.xml</span></code>
+with our OpenCV function.</p>
+<p class="linemarker linemarker-216">Our tracking model does not involve re-training with new data, hence, we do not need many different model options
+similar to the <em>Tracking a Color</em> task.</p>
+<ul>
+<li><p class="linemarker linemarker-219">Here are all the libraries used for tracking a color task.</p>
+<ul class="simple">
+<li><p class="linemarker linemarker-221"><em>cv2</em>: Computer Vision library</p></li>
+<li><p class="linemarker linemarker-222"><em>threading</em>: Threading library for multi, singular processing.</p></li>
+<li><p class="linemarker linemarker-223"><em>time</em>: Library for time related modules.</p></li>
+<li><p class="linemarker linemarker-224"><em>ipywidgets</em>: Widget library used to create graphical user interfaces with IPython display.</p></li>
+<li><p class="linemarker linemarker-225"><em>IPython.display</em>: Library with modules that allow for graphical output within jupyter environment</p></li>
+<li><p class="linemarker linemarker-226"><em>face_follow</em>: Custom library with modules that allow for robot arm to follow the face.</p></li>
+</ul>
+</li>
+<li><p class="linemarker linemarker-228">First initialize the robot arm position as well as creating the instances for the face follow model and the mode for the model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Arm_Lib</span>
+<span class="n">Arm</span> <span class="o">=</span> <span class="n">Arm_Lib</span><span class="o">.</span><span class="n">Arm_Device</span><span class="p">()</span>
+<span class="n">joints_0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="n">Arm</span><span class="o">.</span><span class="n">Arm_serial_servo_write6_array</span><span class="p">(</span><span class="n">joints_0</span><span class="p">,</span> <span class="mi">1500</span><span class="p">)</span>
+
+<span class="n">follow</span> <span class="o">=</span> <span class="n">face_follow</span><span class="p">()</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;General&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="linemarker linemarker-241">Create the controls for the graphical user interface. Unlike the <em>Follow a Color</em> task, we do not need
+many user interfaces, since there is no need to change color or learning a new color.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">button_layout</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;250px&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;50px&#39;</span><span class="p">,</span> <span class="n">align_self</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="n">exit_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Exit&#39;</span><span class="p">,</span> <span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;danger&#39;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">button_layout</span><span class="p">)</span>
+
+<span class="n">imgbox</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;jpg&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">640</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">align_self</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+
+<span class="n">controls_box</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">imgbox</span><span class="p">,</span> <span class="n">exit_button</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">align_self</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">))</span>
+<span class="c1"># [&#39;auto&#39;, &#39;flex-start&#39;, &#39;flex-end&#39;, &#39;center&#39;, &#39;baseline&#39;, &#39;stretch&#39;, &#39;inherit&#39;, &#39;initial&#39;, &#39;unset&#39;]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="linemarker linemarker-256">Create the controls for the exit widget.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">exit_button_Callback</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">model</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;Exit&#39;</span>
+<span class="c1">#     with output: print(model)</span>
+<span class="n">exit_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">exit_button_Callback</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="linemarker linemarker-266">Main process:</p>
+<p class="linemarker linemarker-268">The main function built for our main process is camera function. Within the function:</p>
+<ol class="arabic">
+<li><p class="linemarker linemarker-270">Initialize the camera input, and the framerate.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Open camera</span>
+<span class="n">capture</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-277">Capture every frame from the camera on loop. Terminate the loop upon closure of the camera.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">capture</span><span class="o">.</span><span class="n">isOpened</span><span class="p">():</span>
+</pre></div>
+</div>
+<ol class="arabic">
+<li><p class="linemarker linemarker-283">Import in the frame of the input feed and resize it to 640, 480 ratio.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">img</span> <span class="o">=</span> <span class="n">capture</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-291">Process the input frame with our follow_face model.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">follow</span><span class="o">.</span><span class="n">follow_function</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-298">If the model is set to exit, close all the windows opened and release the camera.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">model</span> <span class="o">==</span> <span class="s1">&#39;Exit&#39;</span><span class="p">:</span>
+    <span class="n">cv</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+    <span class="n">capture</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+    <span class="k">break</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p class="linemarker linemarker-307">To activate the function above, first activate a display output, then within a thread run the function.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">controls_box</span><span class="p">,</span><span class="n">output</span><span class="p">)</span>
+<span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">camera</span><span class="p">,</span> <span class="p">)</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../explanation.html" class="btn btn-neutral float-left" title="Overall Explanation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../mission/index.html" class="btn btn-neutral float-right" title="Mission Project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17821189-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-17821189-2', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
